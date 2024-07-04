@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1,h2,h3,nav,span,button {
+    font-family: sans-serif;
+}
+
+nav {
+    border-bottom: solid white;
+    padding-bottom: 10px ;
+    padding-top: 10px;
+    
+}
+
+header {
+    background-image:url(fondo.jpeg);
+    background-size: cover;
+    color:#ffffff;
+}
+
+.baner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0 10% 0;
+    gap: 5;
+}
+
+h1 {
+    font-size: 13em;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    
+}
+
+
+.escucha {
+    font-size: 2.1em;
+    border: solid white;
+    padding: 10px;
+    background-color: rgba(163, 163, 163, 0.2);
+    margin-right: 13%;
+    }
+
+
+
+.barra {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    list-style:none;
+    margin-right:25vw;
+    margin-left: 25vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+.tours {
+    display: grid;
+    grid-template-rows:repeat(6, 1fr);
+    gap: 1em;
+    justify-content: center;
+    padding-top: 2em;
+    padding-bottom: 3em;
+
+
+
+}
+
+h2 {
+    font-size: 3em;
+    display: flex;
+    justify-self: center;
+    gap: 1em;
+}
+
+.fecha1,.fecha2,.fecha3,.fecha4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-bottom: solid black;
+    font-size:20px;
+    gap: 11em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.fecha5 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size:20px;
+    gap: 11em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footertitle {
+    font-size: 5em;
+}
+
+footer {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 2;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+ .redes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3em;
+    
+ }
+
+ img {
+    width: 40px
+ }
+
+ button {
+    background-color: #5acbf2;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .barra {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  
+  .escucha {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  .tours {
+    grid-template-rows: repeat(6, auto);
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  
+  .fecha1, .fecha2, .fecha3, .fecha4, .fecha5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .fecha1, .fecha2, .fecha3, .fecha4 {
+    gap: 5em;
+  }
+  
+  .footertitle {
+    font-size: 3em;
+  }
+  
+  .redes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 1200px) {
+  .barra {
+    margin-right: 30vw;
+    margin-left: 30vw;
+  }
+  
+  .escucha {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  
+  .tours {
+    grid-template-rows: repeat(6, 1fr);
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+  
+  .fecha1, .fecha2, .fecha3, .fecha4, .fecha5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11em;
+  }
+  
+  .footertitle {
+    font-size: 5em;
+  }
+  
+  .redes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+  }
+}
